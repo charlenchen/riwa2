@@ -1,0 +1,10 @@
+2026-02-18 01:20:34,218 INFO Starting RIW2 Simulation Engine...
+2026-02-18 01:20:34,218 INFO --- Tick 1 ---
+2026-02-18 01:20:36,223 INFO --- Tick 2 ---
+2026-02-18 01:20:38,226 INFO --- Tick 3 ---
+2026-02-18 01:20:45,912 INFO Starting RIW2 Simulation Engine...
+2026-02-18 01:20:45,912 INFO --- Tick 1 ---
+2026-02-18 01:20:47,917 INFO --- Tick 2 ---
+2026-02-18 01:20:47,918 INFO Hot Injection Detected: test.json
+2026-02-18 01:20:47,918 INFO Applying injection: {'type': 'test', 'data': 'hello'}
+2026-02-18 01:20:49,921 INFO --- Tick 3 ---
