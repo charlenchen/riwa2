@@ -1,0 +1,183 @@
+# Cyberpunk City World Configuration
+
+name: "Neo Tokyo 2087"
+description: "A sprawling cyberpunk metropolis where corporations rule and hackers fight for freedom in the neon-lit streets."
+theme: "cyberpunk"
+tick_rate: 1.0
+max_ticks: -1
+
+# Initial locations in the world
+initial_locations:
+  - id: "downtown_plaza"
+    name: "Downtown Plaza"
+    description: "The heart of Neo Tokyo, surrounded by towering holographic advertisements and corporate skyscrapers."
+    location_type: "urban"
+    properties:
+      danger_level: 2
+      tech_level: 5
+
+  - id: "night_market"
+    name: "Night Market"
+    description: "A bustling black market where anything can be bought - for the right price."
+    location_type: "market"
+    connected_locations:
+      - downtown_plaza
+    properties:
+      danger_level: 3
+      tech_level: 4
+
+  - id: "corporate_tower"
+    name: "Arasaka Tower"
+    description: "The imposing headquarters of the Arasaka Corporation, rulers of Neo Tokyo."
+    location_type: "corporate"
+    connected_locations:
+      - downtown_plaza
+    properties:
+      danger_level: 5
+      tech_level: 5
+      restricted: true
+
+  - id: "slums"
+    name: "The Sprawl"
+    description: "Overcrowded tenements where the less fortunate struggle to survive."
+    location_type: "residential"
+    connected_locations:
+      - night_market
+    properties:
+      danger_level: 4
+      tech_level: 2
+
+  - id: "netrunner_hideout"
+    name: "The Den"
+    description: "A hidden bunker where elite netrunners jack into the net."
+    location_type: "hideout"
+    connected_locations:
+      - slums
+    properties:
+      danger_level: 2
+      tech_level: 5
+      restricted: true
+
+# Initial items
+initial_items:
+  - id: "cyberdeck_mk1"
+    name: "CyberDeck Mk.1"
+    description: "A basic hacking deck for netrunning."
+    item_type: "tool"
+    rarity: "common"
+    value: 500
+    attributes:
+      hacking_power: 10
+      energy_cost: 5
+
+  - id: "energy_blade"
+    name: "Energy Blade"
+    description: "A monofilament blade that cuts through anything."
+    item_type: "weapon"
+    rarity: "rare"
+    value: 2000
+    attributes:
+      damage: 25
+      energy_cost: 10
+
+  - id: "health_stim"
+    name: "Health Stim"
+    description: "Nano-medical injector that rapidly heals wounds."
+    item_type: "consumable"
+    rarity: "common"
+    value: 50
+    stackable: true
+    attributes:
+      effects:
+        heal: 50
+
+  - id: "corporate_keycard"
+    name: "Level 5 Keycard"
+    description: "Access card for restricted corporate areas."
+    item_type: "key"
+    rarity: "uncommon"
+    value: 1000
+
+# Initial characters
+initial_characters:
+  - id: "player_starter"
+    name: "Rookie"
+    description: "A newcomer to Neo Tokyo, trying to make their mark."
+    health: 100
+    energy: 100
+    level: 1
+    location: "downtown_plaza"
+    attributes:
+      attack: 10
+      defense: 5
+      hacking: 5
+      max_health: 100
+
+  - id: "fixer_jack"
+    name: "Fixer Jack"
+    description: "A well-connected information broker who knows everyone in the city."
+    health: 80
+    energy: 90
+    level: 5
+    location: "night_market"
+    attributes:
+      charisma: 20
+      contacts: 100
+      max_health: 80
+
+  - id: "corp_agent"
+    name: "Agent Stone"
+    description: "A ruthless corporate security agent."
+    health: 150
+    energy: 100
+    level: 8
+    location: "corporate_tower"
+    attributes:
+      attack: 25
+      defense: 15
+      loyalty: 100
+      max_health: 150
+
+  - id: "netrunner_zero"
+    name: "Zero_Cool"
+    description: "A legendary netrunner who can hack anything."
+    health: 60
+    energy: 200
+    level: 12
+    location: "netrunner_hideout"
+    attributes:
+      hacking: 50
+      stealth: 25
+      max_health: 60
+
+  - id: "street_doc"
+    name: "Doc Martinez"
+    description: "A back-alley doctor who asks no questions."
+    health: 100
+    energy: 80
+    level: 6
+    location: "slums"
+    attributes:
+      medicine: 30
+      empathy: 20
+      max_health: 100
+
+# Custom rules for this world
+custom_rules:
+  - name: "corporate_surveillance"
+    description: "Players in corporate zones may be detected"
+    priority: 5
+
+  - name: "black_market_prices"
+    description: "Items cost more in the night market"
+    priority: 3
+
+# World-specific properties
+world_properties:
+  currency: "Eurodollars"
+  tech_level: 5
+  law_enforcement: "corporate"
+  dominant_factions:
+    - "Arasaka Corporation"
+    - "Militech Industries"
+    - "Netrunner Collective"

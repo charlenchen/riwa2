@@ -8,3 +8,27 @@
 2026-02-18 01:20:47,918 INFO Hot Injection Detected: test.json
 2026-02-18 01:20:47,918 INFO Applying injection: {'type': 'test', 'data': 'hello'}
 2026-02-18 01:20:49,921 INFO --- Tick 3 ---
+2026-02-19 01:01:19,959 INFO Action registered: move
+2026-02-19 01:01:19,959 INFO Action registered: interact
+2026-02-19 01:01:19,959 INFO Action registered: use_item
+2026-02-19 01:01:19,959 INFO Action registered: attack
+2026-02-19 01:01:19,959 INFO Action registered: rest
+2026-02-19 01:01:19,960 INFO World initialized: default_world
+2026-02-19 01:01:19,960 INFO Initializing world: Default World
+2026-02-19 01:01:19,960 INFO World initialized with 0 locations, 0 items, 0 characters
+2026-02-19 01:01:19,960 INFO Using LLM provider: GeminiProvider
+2026-02-19 01:01:19,960 WARNING Template directory not found: src/modules/story_mod/prompt_templates
+2026-02-19 01:01:51,182 INFO Action registered: move
+2026-02-19 01:01:51,182 INFO Action registered: interact
+2026-02-19 01:01:51,182 INFO Action registered: use_item
+2026-02-19 01:01:51,182 INFO Action registered: attack
+2026-02-19 01:01:51,182 INFO Action registered: rest
+2026-02-19 01:01:51,182 INFO World initialized: default_world
+2026-02-19 01:01:51,182 INFO Initializing world: Default World
+2026-02-19 01:01:51,182 INFO World initialized with 0 locations, 0 items, 0 characters
+2026-02-19 01:01:51,182 INFO Using LLM provider: GeminiProvider
+2026-02-19 01:01:51,182 WARNING Template directory not found: src/modules/story_mod/prompt_templates
+2026-02-19 01:01:51,183 INFO World registered: default_world
+2026-02-19 01:01:51,183 INFO Simulation initialized with world: default_world
+2026-02-19 01:01:51,183 INFO Starting RIW2 Simulation Engine...
+2026-02-19 01:01:51,183 INFO Simulation running at 2.0s per tick

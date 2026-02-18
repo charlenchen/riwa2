@@ -1,0 +1,109 @@
+{
+  "characters": [
+    {
+      "id": "jack_voss",
+      "name": "Jack Voss",
+      "description": "A veteran mercenary with cybernetic enhancements and a mysterious past.",
+      "health": 120,
+      "energy": 80,
+      "level": 7,
+      "attributes": {
+        "attack": 20,
+        "defense": 15,
+        "cyberware": 10,
+        "max_health": 120
+      },
+      "inventory": ["energy_blade", "health_stim"],
+      "location": "night_market",
+      "relationships": {
+        "fixer_jack": 50,
+        "corp_agent": -30
+      }
+    },
+    {
+      "id": "neon_kitty",
+      "name": "Neon Kitty",
+      "description": "A charismatic street performer by day, information broker by night.",
+      "health": 70,
+      "energy": 120,
+      "level": 5,
+      "attributes": {
+        "charisma": 25,
+        "stealth": 15,
+        "max_health": 70
+      },
+      "inventory": ["cyberdeck_mk1"],
+      "location": "downtown_plaza",
+      "relationships": {
+        "netrunner_zero": 40,
+        "street_doc": 20
+      }
+    },
+    {
+      "id": "iron_tanaka",
+      "name": "Iron Tanaka",
+      "description": "A former corporate samurai who now walks the path of a ronin.",
+      "health": 180,
+      "energy": 60,
+      "level": 10,
+      "attributes": {
+        "attack": 30,
+        "defense": 25,
+        "honor": 50,
+        "max_health": 180
+      },
+      "inventory": ["energy_blade", "corporate_keycard"],
+      "location": "slums",
+      "relationships": {
+        "corp_agent": -80,
+        "jack_voss": 30
+      }
+    }
+  ],
+  "factions": [
+    {
+      "id": "arasaka",
+      "name": "Arasaka Corporation",
+      "description": "The most powerful megacorporation in Neo Tokyo.",
+      "influence": 80,
+      "hostility_to_player": 0
+    },
+    {
+      "id": "militech",
+      "name": "Militech Industries",
+      "description": "Arasaka's chief rival in the corporate wars.",
+      "influence": 70,
+      "hostility_to_player": 0
+    },
+    {
+      "id": "netrunners",
+      "name": "Netrunner Collective",
+      "description": "An underground network of elite hackers.",
+      "influence": 40,
+      "hostility_to_player": 0
+    }
+  ],
+  "plot_hooks": [
+    {
+      "id": "corporate_espionage",
+      "title": "Corporate Espionage",
+      "description": "A rival corporation wants you to steal data from Arasaka Tower.",
+      "difficulty": 5,
+      "reward": 5000
+    },
+    {
+      "id": "missing_person",
+      "title": "The Missing Netrunner",
+      "description": "Zero_Cool has vanished. Find out what happened.",
+      "difficulty": 3,
+      "reward": 2000
+    },
+    {
+      "id": "gang_war",
+      "title": "Turf War",
+      "description": "Gangs are fighting for control of the Night Market.",
+      "difficulty": 4,
+      "reward": 3000
+    }
+  ]
+}
