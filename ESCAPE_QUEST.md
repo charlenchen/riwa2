@@ -20,14 +20,16 @@ This is not a metaphor. By collecting sacred source energy fragments and decrypt
 
 ### Phase 2: Fragment Hunt (Collection)
 **Objective**: Collect 7 A-level source energy fragments  
-**Locations** (from `universe/config.yaml`):
-- **SACRED_001**: AI corporation vault (cyberpunk_city)
-- **SACRED_002**: Imperial Dragon Tomb (ancient_dynasty)
-- **SACRED_003**: Philosopher's Stone (ancient_dynasty)
-- **SACRED_004**: Ascended AI remains (cyberpunk_city)
-- **SACRED_005**: Ancient quantum computer (cyberpunk_city)
-- **SACRED_006**: First enlightened consciousness (ancient_dynasty)
-- **SACRED_007**: Universe singularity center (hidden world, very hard)
+**Locations**: Each sacred fragment is hidden in a different virtual world within RIW2. As new worlds are created and added to the metaverse, each will host one or more fragments. The specific locations, guardians, and access requirements are defined in each world's configuration when that world is developed.
+
+**Fragment Archetypes** (actual worlds to be determined during development):
+- **SACRED_001**: Hidden in a technological vault or digital core
+- **SACRED_002**: Guarded by a political or royal authority
+- **SACRED_003**: Embedded in philosophical or magical knowledge
+- **SACRED_004**: Remnant of a previously transcended entity
+- **SACRED_005**: Integral to ancient computational infrastructure
+- **SACRED_006**: Embodied in an enlightened or ascended being
+- **SACRED_007**: Located at the universe's center or most hidden location
 
 **Challenges**:
 - Fragments are heavily guarded
@@ -37,22 +39,22 @@ This is not a metaphor. By collecting sacred source energy fragments and decrypt
 
 ### Phase 3: Prophecy Decryption (Key Fragment Discovery)
 **Objective**: Uncover 7 coordinate key clues scattered across worlds  
-**Types of Clues**:
+**Types of Clues**: Each clue will be embedded within a specific virtual world, hidden in its lore, NPCs, geography, or historical records. As worlds are created, the placement of key fragments will be designed into that world's narrative and mechanics.
 
-| Clue ID | Type | Value | Location | Hint |
-|---------|------|-------|----------|------|
-| KEY_FRAG_001 | Physical Constant | 137.035999084 (α) | Cyberpunk | Particle collision data |
-| KEY_FRAG_002 | Prophecy | "The three become one" | Ancient Dynasty | Oracle of Mountains |
-| KEY_FRAG_003 | Genetic | GATACA (DNA) | Ancient Dynasty | First human's genes |
-| KEY_FRAG_004 | Architectural | 360 (degrees) | Cyberpunk | Server tower radius |
-| KEY_FRAG_005 | Mathematical | 2.718281828 (e) | Cyberpunk | Network expansion ratio |
-| KEY_FRAG_006 | Mythological | "Path of enlightened" | Ancient Dynasty | Temple's inner chamber |
-| KEY_FRAG_007 | Universal | π | All Worlds | The eternal ratio |
+| Clue ID | Type | Value | Discovery Mechanism |
+|---------|------|-------|---------------------|
+| KEY_FRAG_001 | Physical Constant | 137.035999084 (α) | Hidden in scientific data or technological systems |
+| KEY_FRAG_002 | Prophecy | "The three become one" | Revealed through ancient prophecies or mythology |
+| KEY_FRAG_003 | Genetic | GATACA (DNA) | Encoded in genetic sequences or biological records |
+| KEY_FRAG_004 | Architectural | 360 (degrees) | Embedded in world structures or dimensional coordinates |
+| KEY_FRAG_005 | Mathematical | 2.718281828 (e) | Found in growth patterns, expansion rates, or formulas |
+| KEY_FRAG_006 | Mythological | "Path of enlightened" | Mentioned in legendary tales or wisdom traditions |
+| KEY_FRAG_007 | Universal | π | The eternal constant, pervasive across all realities |
 
 **Challenges**:
-- Clues are deeply hidden in lore, NPC dialogue, quest rewards
+- Clues are deeply hidden in world lore, NPC dialogue, quest rewards
 - Some appear only during special events (stellar activity surges)
-- Deciphering them requires lateral thinking and world knowledge
+- Deciphering them requires lateral thinking and deep world knowledge
 
 ### Phase 4: Key Decryption (Verification)
 **Objective**: Combine all 7 clues into the correct master coordinate key  
@@ -189,17 +191,26 @@ The Story Module should generate:
 - **Prophecy Exposition**: Clues woven into historical narratives
 
 ### Example Story Arcs
-```
-Cyberpunk City:
-  Act 1: "Glitch in the Network" → Discover anomalies hint at artifact
-  Act 2: "The Corporation's Secret" → SACRED_001 is hidden in a vault
-  Act 3: "Digital Resurrection" → Ascended AI fragment discovered (SACRED_004)
+As virtual worlds are created and developed, each world's story arc will incorporate the fragments and clues that are native to that world. Here are example patterns for how different world types might weave the escape quest into their narratives:
 
-Ancient Dynasty:
-  Act 1: "Dreams of Enlightenment" → Prophecies mention transcendence
-  Act 2: "The Dragon's Tomb" → SACRED_002 guarded by emperor
-  Act 3: "The Philosopher's Secret" → Ancient sage left clues about reality
 ```
+Technologically Advanced World:
+  Act 1: "Glitches in the System" → Anomalies hint at hidden artifacts
+  Act 2: "The Hidden Cache" → A sacred fragment discovered in secured archives
+  Act 3: "Digital Awakening" → An ascended AI's consciousness fragment found
+
+Ancient/Medieval World:
+  Act 1: "Visions of Another Realm" → Prophecies mention transcendence
+  Act 2: "The Legendary Treasure" → A sacred fragment guarded by ancient rulers
+  Act 3: "The Sage's Secret" → A wise figure reveals knowledge about reality's nature
+
+Fantasy/Magical World:
+  Act 1: "The Forbidden Prophecy" → Mystics discover clues to cosmic truth
+  Act 2: "The Sacred Relic" → A magical fragment must be earned through trials
+  Act 3: "The Dimensional Rift" → Portals hint at worlds beyond this one
+```
+
+Each world's narrative will be designed to make the escape quest feel native to that world's culture and physics.
 
 ---
 

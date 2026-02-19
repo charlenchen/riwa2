@@ -12,7 +12,7 @@ RIW2 is an AI-driven, community-participatory, evolvable cross-media metaverse e
 
 ### Prerequisites
 
-- Python 3.8+
+- Python 3.11+
 
 ### Installation
 

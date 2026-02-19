@@ -158,6 +158,21 @@ python tools/cli.py --tick-rate 2.0 --world cyberpunk_city
 - **Hot Injection**: Validate and sanitize JSON inputs from `data/inbox/` before applying
 - **Log Files**: `data/logs/` may contain PII from character narratives—handle appropriately
 
+## Core Universe Documentation
+
+The RIW2 universe has extensive design documentation that defines mechanics across multiple domains:
+
+**Essential References**:
+- [UNIVERSE_LORE.md](UNIVERSE_LORE.md) - Foundational universe mythology and core systems
+- [SOURCE_ENERGY.md](SOURCE_ENERGY.md) - Complete economic and resource system (regeneration, decay, tier system)
+- [ESCAPE_QUEST.md](ESCAPE_QUEST.md) & [ESCAPE_QUEST_ZH.md](ESCAPE_QUEST_ZH.md) - Game objectives and victory conditions
+- [ESCAPE_COMPETITION.md](ESCAPE_COMPETITION.md) - Multi-player competition mechanics, alliance systems, betrayal risks
+- [CROSS_WORLD_RULES.md](CROSS_WORLD_RULES.md) - Physics compatibility, ability scaling, time dilation effects
+- [SERVER_AI_PROTOCOL.md](SERVER_AI_PROTOCOL.md) - Celestial Core behavior, testing mechanisms, defense systems
+- [POST_ESCAPE_INTERACTION.md](POST_ESCAPE_INTERACTION.md) - Godhood powers, divine communication, eternal universe engagement
+
+When implementing features, cross-reference these documents to ensure consistency with established lore.
+
 ## Testing Conversions
 
 When adding new features:
@@ -165,3 +180,4 @@ When adding new features:
 2. Verify with `pip install -r requirements.txt` environment
 3. Test serialization/deserialization round-trip for any new entity types
 4. Validate event flow through event bus subscribers
+5. Ensure new features align with SOURCE_ENERGY, ESCAPE_COMPETITION, and other universe mechanics

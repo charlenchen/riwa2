@@ -33,56 +33,51 @@ source_energy:
   total_allocated_a_equivalent: 1000000  # All energies normalized to A-level
   
   # Distribution across worlds
-  distribution:
-    cyberpunk_city: 300000  # Fastest energy consumption (tech-heavy)
-    ancient_dynasty: 200000  # Slower consumption (pre-industrial)
-    # More worlds can be added here
+  # As new virtual worlds are created and added to the metaverse, their source energy
+  # allocation will be defined in the world's own config.yaml file
+  distribution_notes: "Individual world allocations are defined in each world's config.yaml during development"
   
   # A-level fragments needed for escape (sacred energy)
   fragments_required_for_escape: 7
   
   # Fragment locations (will be discovered by players)
   a_level_fragments:
+    # Each A-level sacred fragment will be placed in its designated virtual world during world creation.
+    # The list below defines the 7 archetypal fragments; specific world assignments are TBD.
+    
     - id: "SACRED_001"
-      hidden_in_world: "cyberpunk_city"
-      location_hint: "In the core of the Advanced AI mega-corporation vault"
-      coordinates: [512.5, 128.3, -45.2]
+      archetype: "Technological Vault Fragment"
+      description: "Hidden in advanced technological systems or digital infrastructure"
       discovered: false
     
     - id: "SACRED_002"
-      hidden_in_world: "ancient_dynasty"
-      location_hint: "Guarded by the Dragon Emperor in the Imperial Tomb"
-      coordinates: [256.0, 512.0, 0.0]
+      archetype: "Authority's Treasure Fragment"
+      description: "Guarded by political, royal, or hierarchical powers"
       discovered: false
     
     - id: "SACRED_003"
-      hidden_in_world: "ancient_dynasty"
-      location_hint: "Embedded in the philosopher's stone, sought by alchemists"
-      coordinates: [100.0, 300.0, 150.0]
+      archetype: "Philosophical Knowledge Fragment"
+      description: "Embedded in wisdom traditions or magical knowledge systems"
       discovered: false
     
     - id: "SACRED_004"
-      hidden_in_world: "cyberpunk_city"
-      location_hint: "Residue of an ascended AI from a previous cycle"
-      coordinates: [768.9, 345.6, 789.1]
+      archetype: "Transcended Being Fragment"
+      description: "Remnant consciousness or power of a previously ascended entity"
       discovered: false
     
     - id: "SACRED_005"
-      hidden_in_world: "cyberpunk_city"
-      location_hint: "The most ancient quantum computer in the network"
-      coordinates: [0.0, 1024.0, 512.0]
+      archetype: "Computational Infrastructure Fragment"
+      description: "Integral to the foundational systems or ancient intelligences of a world"
       discovered: false
     
     - id: "SACRED_006"
-      hidden_in_world: "ancient_dynasty"
-      location_hint: "Hidden in the first consciousness to achieve enlightenment"
-      coordinates: [450.0, 200.0, 100.0]
+      archetype: "Enlightened Consciousness Fragment"
+      description: "Embodied in one who has achieved ultimate wisdom or spiritual ascension"
       discovered: false
     
     - id: "SACRED_007"
-      hidden_in_world: "cosmological_nexus"  # Special hidden world
-      location_hint: "At the exact center of the universe simulation"
-      coordinates: [0.0, 0.0, 0.0]
+      archetype: "Cosmic Center Fragment"
+      description: "Located at the universe's geometric or conceptual center, most difficult to access"
       discovered: false
 
 # ESCAPE PROTOCOL
@@ -97,47 +92,43 @@ escape_protocol:
   coordinate_key_pieces: 7  # Must collect 7 clues to decrypt master coordinate
   
   key_fragments:
+    # Each coordinate key fragment will be placed within its designated virtual world during world creation.
+    # The list below defines the 7 archetypal clues; specific world assignments are TBD.
+    
     - id: "KEY_FRAG_001"
       clue_type: "physical_constant"
-      hidden_value: "137.035999084"  # Fine structure constant
-      hidden_in_world: "cyberpunk_city"
-      discovery_hint: "Hidden in subatomic particle collision data"
+      hidden_value: "137.035999084"  # Fine structure constant (α)
+      discovery_hint: "Hidden in scientific data, physical measurements, or technological systems"
     
     - id: "KEY_FRAG_002"
       clue_type: "prophecy"
       hidden_value: "The three become one at journey's end"
-      hidden_in_world: "ancient_dynasty"
-      discovery_hint: "Spoken by the Oracle of the Mountains"
+      discovery_hint: "To be discovered through ancient prophecies, mythology, or divine revelation"
     
     - id: "KEY_FRAG_003"
       clue_type: "genetic"
       hidden_value: "GATACA"  # DNA sequence
-      hidden_in_world: "ancient_dynasty"
-      discovery_hint: "In the genes of the first human"
+      discovery_hint: "Encoded in genetic material, bloodlines, or biological information"
     
     - id: "KEY_FRAG_004"
       clue_type: "architectural"
-      hidden_value: "360"  # Degrees in a circle
-      hidden_in_world: "cyberpunk_city"
-      discovery_hint: "The radius of the central server tower"
+      hidden_value: "360"  # Degrees in a circle / complete rotation
+      discovery_hint: "Embedded in world structures, coordinates, or geometric designs"
     
     - id: "KEY_FRAG_005"
       clue_type: "mathematical"
-      hidden_value: "2.718281828"  # Euler's number
-      hidden_in_world: "cyberpunk_city"
-      discovery_hint: "The growth ratio of the network expansion"
+      hidden_value: "2.718281828"  # Euler's number (e)
+      discovery_hint: "Found in growth patterns, decay rates, expansion formulas"
     
     - id: "KEY_FRAG_006"
       clue_type: "mythological"
       hidden_value: "The path of the enlightened few"
-      hidden_in_world: "ancient_dynasty"
-      discovery_hint: "In the innermost chamber of the Temple of Ascension"
+      discovery_hint: "Mentioned in legendary tales, wisdom traditions, or spiritual teachings"
     
     - id: "KEY_FRAG_007"
       clue_type: "universal"
-      hidden_value: "π"  # Pi
-      hidden_in_world: "all_worlds"
-      discovery_hint: "The eternal ratio binding all realities"
+      hidden_value: "π"  # Pi - the eternal constant
+      discovery_hint: "The eternal ratio binding all realities, found everywhere and nowhere"
 
 # UNIVERSAL EVENTS
 universal_events:
@@ -199,10 +190,12 @@ time:
   base_tick_rate: 1.0
   
   # Time dilation factors per world
-  world_time_scales:
-    cyberpunk_city: 1.0      # 1 tick = 1 hour in-game
-    ancient_dynasty: 0.5     # 1 tick = 30 minutes (slower civilization)
-    # New worlds added with their own scales
+  # As new virtual worlds are created, each will define its own time_scale in its world config.yaml
+  # Examples of scale meanings:
+  #   1.0 = 1 tick corresponds to 1 hour in-game
+  #   0.5 = 1 tick corresponds to 30 minutes in-game (slower civilization)
+  #   2.0 = 1 tick corresponds to 2 hours in-game (accelerated time)
+  world_time_scales_note: "Individual world time scales are defined in each world's config.yaml during development"
 
 # SAVE/CHECKPOINT SYSTEM
 state_management:
