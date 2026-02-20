@@ -22,8 +22,14 @@ riw2/                          (真实项目根 = 虚拟宇宙的运行容器)
 │   ├── POST_ESCAPE_INTERACTION.md 神与宇宙互动
 │   └── REVIEW_CHECKLIST.md    设计完善清单
 │
-├── src/                        (真实代码实现)
-├── universe/                   (RIWA2世界实现)
+├── src/                        (真实代码实现 - 引擎)
+├── universe/                   (RIWA2世界实现 - 虚拟世界代码)
+├── realms/                     (RIWA2派生创意产物 - 虚拟世界産出)
+│   └── {world_name}/
+│       ├── novels/            图文小说/叙事作品
+│       ├── games/             游戏产物
+│       ├── illustrations/     概念图/原画
+│       └── audio/             配乐/音效
 ├── tools/
 ├── data/
 ├── QWEN.md                     (模型指令)
@@ -36,7 +42,9 @@ riw2/                          (真实项目根 = 虚拟宇宙的运行容器)
 **虚拟中的虚拟**：真实的 `riw2` 项目容纳虚拟的 `RIWA2` 宇宙  
 - `docs/` = 真实项目文档（关于这个代码库本身）
 - `lore/` = 虚拟宇宙文档（RIWA2的设定与规则）
-- `src/` + `universe/` = 代码实现（承载虚拟宇宙的引擎）
+- `src/` = 代码实现（真实的引擎）
+- `universe/` = 虚拟世界实现（虚拟世界的代码）
+- `realms/` = 派生创意产物（虚拟世界产生的故事、游戏、美术）
 
 [📖 查看完整宇宙设定](lore/README.md)
 
